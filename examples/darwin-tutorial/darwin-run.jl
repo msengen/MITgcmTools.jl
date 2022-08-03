@@ -43,13 +43,13 @@ end
 # TODO: copy and paste in the correct config_id
 # (from the output of darwin-setup)
 ##################
-MITgcm_path[1] = "/Users/birdy/Documents/eaps_research/darwin3" # CHANGE ME 
-config_id = "2be3bfab-d1bb-4e18-828c-a4ca1b8c80e8" # CHANGE ME
+MITgcm_path[1] = "/home/msengen/darwin3" # CHANGE ME 
+config_id = "maggie_test_1" # CHANGE ME
 
 # reload the config 
 config_name = "darwin-single-box"
 folder = joinpath(MITgcm_path[1], "verification/darwin-single-box/run")
-config_obj = MITgcm_config(configuration=config_name, ID=UUID(config_id), folder=folder)
+config_obj = MITgcm_config(configuration=config_name, ID=config_id, folder=folder)
 rundir = joinpath(folder, config_id, "run")
 
 ##################
