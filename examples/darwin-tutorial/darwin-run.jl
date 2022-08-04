@@ -44,7 +44,7 @@ end
 # (from the output of darwin-setup)
 ##################
 MITgcm_path[1] = "/home/msengen/darwin3" # CHANGE ME 
-config_id = "maggie_test_1" # CHANGE ME
+config_id = "maggie_test_2" # CHANGE ME
 
 # reload the config 
 config_name = "darwin-single-box"
@@ -61,7 +61,8 @@ rundir = joinpath(folder, config_id, "run")
 update_param("data", "PARM03", "nenditer", 2880) # end after 1 year
 
 # temperature
-update_param("data", "PARM01", "tRef", 30.0)
+#was originally 30.0
+update_param("data", "PARM01", "tRef", 40.0)
 
 # nutrients 
 # NO3
